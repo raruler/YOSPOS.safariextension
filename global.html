@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>global page</title>
+<script type="text/javascript">
+
+function messageHandler(event) {
+	switch(event.name) {
+		case 'canLoad':
+			//Hideous, but what can you do.
+			if(event.message == 'CSS_HACK') {
+				event.message = getTheme();
+			} else {
+				//This shouldn't ever happen.
+				return true;
+			}
+			break;
+		case 'getTheme':
+			changeTheme();
+			break;
+		case 'getScanlines':
+			changeScanlines();
+			break;
+		case 'getSignature':
+			getSignature();
+			break;
+	}
+}
+
+
+function settingChanged(event) {
+	switch(event.key) {
+	case "theme":
+		changeTheme();
+		break;
+	case "scanlines":
+		changeScanlines();
+		break;
+	case "line_height":
+		changeScanlines();
+		break;
+	case "line_intensity":
+		changeScanlines();
+		break;
+	case "corner_intensity":
+		changeScanlines();
+		break;
+	}
+}
+
+function changeScanlines() {
+	if(safari.extension.settings.scanlines) {
+		var settings = {'line_height' : safari.extension.settings.line_height,
+						'line_intensity' : safari.extension.settings.line_intensity,
+						'corner_intensity' : safari.extension.settings.corner_intensity};
+	
+		messageAll("scanlines", settings);
+	}
+}
+
+function changeTheme() {
+	var css_file = getTheme();
+	messageAll("theme", css_file);
+}
+
+
+function getTheme() {
+	var theme = safari.extension.settings.theme;
+	var css_file = '';
+	switch(theme) {
+		case 'amber':
+			css_file = '219a.css';
+			break;
+		case 'green':
+			css_file = '219.css';
+			break;
+	}
+	return css_file;
+}
+
+function getSignature() {
+	if(safari.extension.settings.signature) {
+		messageAll("signature", "");
+	}
+}
+	
+
+function messageAll(message, data)
+{
+	for (var i = 0; i < safari.application.browserWindows.length; i++)
+	{
+		var browserWindow = safari.application.browserWindows[i];
+		for (var j = 0; j < browserWindow.tabs.length; j++)
+		{
+			var tab = browserWindow.tabs[j];
+			try{
+				tab.page.dispatchMessage(message, data);
+			} catch(err) {
+				// other pages might not accept messages, shrug
+			}
+		}
+	}
+}
+
+
+safari.application.addEventListener("message", messageHandler, false);
+safari.extension.settings.addEventListener("change", settingChanged, false);
+</script>
+</head>
+<body>
+</body>
+</html>

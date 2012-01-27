@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>raruler</string>
+	<key>Builder Version</key>
+	<string>7534.52.7</string>
+	<key>CFBundleDisplayName</key>
+	<string>YOSPOS</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.simgods.yospos</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.4</string>
+	<key>CFBundleVersion</key>
+	<string>2.4</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>global.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>tablebreak.js</string>
+				<string>script.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>jquery.min.js</string>
+				<string>intercept.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>scanlines.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>YOSPOS Settings</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>forums.somethingawful.com</string>
+			</array>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://files.me.com/raruler/aomwxr</string>
+</dict>
+</plist>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>Theme</string>
+		<key>Type</key>
+		<string>Group</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>amber</string>
+		<key>Key</key>
+		<string>theme</string>
+		<key>Title</key>
+		<string>Theme</string>
+		<key>Titles</key>
+		<array>
+			<string>Amber</string>
+			<string>Green</string>
+		</array>
+		<key>Type</key>
+		<string>PopUpButton</string>
+		<key>Values</key>
+		<array>
+			<string>amber</string>
+			<string>green</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Scanlines (by Nevett)</string>
+		<key>Type</key>
+		<string>Group</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>scanlines</string>
+		<key>Title</key>
+		<string>Enable Scanlines</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>0.29999999999999999</real>
+		<key>Key</key>
+		<string>line_intensity</string>
+		<key>MaximumValue</key>
+		<real>1</real>
+		<key>StepValue</key>
+		<real>0.10000000000000001</real>
+		<key>Title</key>
+		<string>Line Intensity</string>
+		<key>Type</key>
+		<string>Slider</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>2</real>
+		<key>Key</key>
+		<string>line_height</string>
+		<key>MaximumValue</key>
+		<real>5</real>
+		<key>MinimumValue</key>
+		<real>2</real>
+		<key>Title</key>
+		<string>Line Height</string>
+		<key>Type</key>
+		<string>Slider</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>0.5</real>
+		<key>Key</key>
+		<string>corner_intensity</string>
+		<key>MaximumValue</key>
+		<real>1</real>
+		<key>StepValue</key>
+		<real>0.10000000000000001</real>
+		<key>Title</key>
+		<string>Corner Intensity</string>
+		<key>Type</key>
+		<string>Slider</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Signature</string>
+		<key>Type</key>
+		<string>Group</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>signature</string>
+		<key>Title</key>
+		<string>Always Show Signature</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+</array>
+</plist>

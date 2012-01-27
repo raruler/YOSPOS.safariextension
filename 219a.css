@@ -1,0 +1,420 @@
+/* YOSPOS Style 
+
+Concept by Sweevo
+CSS by Anal Volcano
+Link flashing animation by roboshit
+I totally forgot who did the images :(
+
+*/
+
+body, #bitch {
+	color:#eacf4c !important;
+	font: 12px 'consolas', monaco, monospace !important;
+	font-weight:bold;
+	background-color:black;
+}
+a {
+	color:#eacf4c !important;
+}
+#container {
+	background-color:black;
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+#mods, div.pages, #copyright, #forum th, #forum td.lastpost, #forum span.pages, #thread div.postbar, td.postdate, td.postlinks, #thread dl.userinfo dd, #thread tr.postbar td, div.threadrate, div.subscribe {
+	color:#eacf4c !important;
+}
+#navigation, #nav_purchase, #thread p.editedby, #forum td.title a.pagenumber, #forum td.title, #forums th, #forums div.subforums, #forums td.moderators, #pm, #info {
+	font-size:12px !important;
+}
+div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
+	background-color: black;
+}
+
+.timg { border: 2px solid #eacf4c !important; }
+
+td.title div.lastseen {
+	background:none !important;
+}
+
+#forum td.title div.lastseen a.x {
+	background:none !important;
+}
+div.breadcrumbs a.bclast {
+	border-bottom:none !important;
+	text-decoration:underline !important;
+}
+#thread td.postbody, #thread dl.userinfo, #forum td.replies, #forum td.views, #forum td.author, #subforums {
+	color:#eacf4c !important;
+	font: 14px 'consolas', monaco, monospace !important;
+	line-height: 20px !important;
+}
+td.postdate { height: 30px; }
+
+#mods, div.pages, #copyright, #forum th, #forum td.lastpost, #forum span.pages, #thread div.postbar, td.postdate, td.postlinks, #thread dl.userinfo dd, #thread tr.postbar td, div.threadrate, div.subscribe {
+	color:#eacf4c !important;
+	font: 12px 'consolas', monaco, monospace !important;
+}
+div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
+	border:1px solid #eacf4c !important;
+}
+.author.op {
+	color:#eacf4c !important;
+
+}
+/* jumplist @ bottom */
+select {
+	background-color:black;
+	color:#eacf4c !important;
+	font: 12px 'consolas', monaco, monospace !important;
+}
+#forum td.title div.lastseen a {
+	font-size: 12px !important;
+}
+div.breadcrumbs, #subforums td.title dt, #forum td.lastpost a.author, div.threadbar form.threadsearch label, #thread dl.userinfo dt, #forums td.title a.forum {
+	font-weight:bold !important;
+	font-size:14px !important;
+}
+
+#filter {
+	display:none !important;
+}
+
+#ac_timemachine {
+	width:350px !important;
+	background: black !important;
+	border: none !important;
+	padding-left:5px !important;
+}
+
+#forum th, div.threadbar, div.forumbar, #forums th, #pm th, #info th {
+	background:black !important;
+}
+
+.profilelinks li {
+	border-right: 1px solid #eacf4c !important;
+	padding-top:8px;
+	padding-bottom:7px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-left:-5px;
+	margin-right:0px;
+}
+
+.bbc-block h4, .bbc-block h5 {
+	color: #eacf4c !important;
+}
+.bbc-block h4 {
+	border-top: 1px #eacf4c solid !important;
+}
+.bbc-block, .bbc-block h5 {
+	border-bottom: 1px #eacf4c solid !important;
+}
+
+/* Page links */
+.pages a, .pages .curpage {
+	font-size:14px !important;
+	margin-right:0px !important;
+	color: #eacf4c !important;
+}
+.pages.top, .pages.bottom {
+	font-size:14px !important;
+}
+.curpage {
+	padding-right:5px !important;
+}
+div.pages a:hover {
+	background:none !important;
+	padding-right:0px !important;
+	margin-right: 0px;
+}
+div.pages a {
+	border-bottom:none !important;
+	text-decoration:underline !important;
+}
+#globalmenu, #globalthing {
+	background-color:black !important;
+	border-bottom: 1px #eacf4c solid !important;
+	font: 14px 'consolas', monaco, monospace !important;
+}
+
+#globalmenu li {
+	border-left:1px #eacf4c solid;
+	padding-right:3px !important;
+}
+
+
+/* Personal preference + looks less cluttered like this. Use "Buy forum stuff" link if you need to do so. */
+#nav_purchase {
+	display:none;
+}
+.title_pages {
+	color: #eacf4c !important;
+}
+
+.title_pages a {
+	text-decoration:underline !important;
+}
+.title_pages a:hover {
+	background-color:black !important;
+}
+
+#forum td.title div.lastseen a.count {
+	border-left:1px #eacf4c solid !important;
+}
+.lastseen {
+	border:1px #eacf4c solid !important;
+}
+div.breadcrumbs h1, input, #forum td.title a {
+	font-size:14px !important;
+}
+
+/* New thread/reply & edit post */
+table.standard th {
+	background-color:black !important;
+	color: #eacf4c !important;
+}
+table.standard td {
+	background-color:black !important;
+}
+div.mainbodytextsmall, .smalltext, .smalltext a {
+	font-size: 12px !important;
+}
+.bginput {
+	background-color:black;
+	color: #eacf4c !important;
+	border:1px #eacf4c solid !important;
+	font: 14px 'consolas', monaco, monospace !important;
+}
+textarea {
+	background-color:black;
+	color: #eacf4c !important;
+	border:1px #eacf4c solid !important;
+	outline: none;
+	font: 12px 'consolas', monaco, monospace !important;
+}
+table.standard th, table.standard td {
+	border:1px #eacf4c solid !important;
+}
+.standard h2 {
+	background-color:black !important;
+	color: #eacf4c !important;
+	border-bottom:1px #eacf4c solid !important;
+}
+div.standard {
+	background-color:black !important;
+	color: #eacf4c !important;
+	border:1px #eacf4c solid !important;
+}
+
+#forum td.replies, #forum td.views, #forum th.rating, #forum td.rating {
+	font: 14px 'consolas', monaco, monospace !important;
+}
+
+/* ul.postbuttons {
+	padding:5px !important;
+}
+
+.threadbar {
+	padding:0px !important;
+}
+
+ .postlinks .postbuttons li a {
+	border-left:1px #eacf4c solid !important;
+	padding:5px !important;
+	margin-right:-6px !important;
+} 
+.threadbar.top  li a {
+	border-left:1px #eacf4c solid !important;
+	padding:5px !important;
+	margin-right:-6px !important;
+}*/
+
+
+.signature {
+	border-top:1px #eacf4c solid !important;
+}
+
+.seen1 td, .seen2 td {
+	/*background-color:#2d270c !important;*/
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABlJREFUeNpi9HWR+M/AwMDIBCKA+D9AgAEAGfsCrVbpGIsAAAAASUVORK5CYII=') top left repeat !important;
+}
+
+#thread table.post p.editedby span, #thread table.post p.attachment span {
+	color: #eacf4c !important;
+	font-size: 12px !important;
+	opacity: 1.0 !important;
+	font-style:normal !important;
+}
+
+/* holy moly thanks roboshit */
+@-webkit-keyframes animes {
+	0% {
+		background:#eacf4c;
+    color:#000;
+	}
+	50% {
+		background:#000;
+    color:#eacf4c;
+	}
+	100% {
+		background:#eacf4c;
+    color:#000;
+	}
+}
+
+a:hover {
+  -webkit-animation-name: animes;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+.bginput:hover {
+   -webkit-animation-name: animes;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+/* fix to make posts with only "quote" button have same bottom bar height as ones with "edit" or i suppose "report" */
+ul.postbuttons li {
+	padding:2px !important;
+}
+ul.postbuttons a {
+	-webkit-animation-name:none;
+	-moz-animation-name:none;
+}
+
+/******/
+
+#rateform_js_attach {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAUCAYAAAB7wJiVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUdJREFUeNpi/HA66D/DKBg0gAVMqs5jpJqJt5P+j5pHvlmM4BxCTQeOAooihGk0FAYXGI2QQVmHEAEcLBTAlf+BEw8oKt4KEg0wGhET5l8g28wFXY4Y5iWU7adKEXxhUyDYbAO/9WSZ9+t+DFg/2x82TEkc1QQLKZFBKYBFBnIEgMRAmJxIgUUGcgSAxECY0kiBRQZVAAl1NAu9IoPSnIANUCsn0DQyqF2HgIooSospUnLMQANKiym61SGDOTLQ6xFycw7NIgPUVyGyCCO6H0KtSp3WOQNbvUKNoopqkQSLHGxhDpRjGco5g9oAPdAHovhiGo2M0Y4hRiRh65sQWzxh64cMpqEQjPqDACBYh+Bq9pJTl+ALeHJzDa06huj1CdnFFrYIwRXeo4OLgy9HjY5ljdYho4C+EUJiJTZqHrZKfRQMGgAQYAByQMlJ7tE5AAAAAABJRU5ErkJggg==') no-repeat top left;
+    padding-top: 10px;
+}
+
+#rateform_js_attach img {
+    height: 0px;
+    width: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+#rateform_js_attach img:last-child {
+    width: 0px;
+}
+
+.postbuttons img[alt="Quote"] {
+    height: 0px;
+    width: 61px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAUCAYAAAA+wTUXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKpJREFUeNrsWFsOgCAMowvH8+7ew0vMxPhBCBAYD8GxH4kug9qWDHCdBxtlYd8nlOB9CCajMDZobZ7O8oIXCHzPfRerE8tx81IbL1ox7S4emZP3rANvjL/IG4XsYXXQKATFpcBX38hEjdXqoKERtAg4jZDTbFKnUT6ayds2Uz4cKIwOOSEQnGhwRARYgW+4wlto4NPqEyGNktSKvXfTP71PWR8yrerK6BZgAH1/IT+5BV+CAAAAAElFTkSuQmCC');
+}
+
+.postbuttons img[alt~="Post"] {
+    height: 0px;
+    width: 61px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAUCAYAAAA+wTUXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJxJREFUeNrsV1sKwCAMM+LxdvfdY5foYOxLypAaH6ztj4IFDUnbiOs8JDmL8q5wgvchOCeHEaC91bSpNpRAQx4rx9yLrEyj2kN5nFTn1hzX8kYvw7uA1piFAgosabNASyXTHuBTjFIhy47BuIw2S3nTuv11I5sm6XBkBHMijXUqH6NHGhpiy51DGxmIeSDfGfIO0PHLWjA2VsYtwAAJMiI61IP5awAAAABJRU5ErkJggg==');
+}
+
+.postbuttons img[alt="Reply"] {
+    height: 0px;
+    width: 61px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAUCAYAAAA+wTUXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKdJREFUeNrsmNENgCAMRDnCeO7uHi5xJsYPYyCUVgyk9Ecl9eSFXhVx7BuDs0j3EU54rwWOwWEsaG+ervogExDkPPM0OqjMCYVr80rjdZ6DKOVYdaYrb3jzNEcGT0oYid+sOrUqolYndihZaQ6MlaD2fzQ8jDP6+Y/3NAfT6Q49JLAUurUxsXAPBZoSnRY9dfeGYOzLBtf9O2BtOBa0g12Wq19GpwADAOrpIz0d/2YPAAAAAElFTkSuQmCC');
+}
+
+.alertbutton > a > img {
+    height: 0px;
+    width: 61px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAUCAYAAAA+wTUXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAL5JREFUeNrsWFsOwyAMq1GP17vvHruEJ1X9mBhUzojUoJCfVqpJ4ryA4v06uCWT/XoiCd8zwWVLKIt0tp7+qfuGQMB84xQ9PRyM/lhwzUyjem+R6GGselh9t9hihPKOsANA8ceLNAMQh5qIXSRzR4iGoIwGxkVPcShZFQOHSnCppGIwxCD9HGqQDTky6+FkmotLcRhM7Kyh4eDASg/+DKZiszm9ldHvNeAUHAxr8ERPrwvHIh3wlpXql9FHgAEAAy8lRoALQX8AAAAASUVORK5CYII=');
+}
+
+.postbuttons img[alt="Edit"] {
+    height: 0px;
+    width: 61px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAUCAYAAAA+wTUXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJVJREFUeNrsmEsKwCAMRJ3g8Xr33qOXmELpqmBJS9TaMRsFg/qSCX6wrQuTmOWzhQjvkWBLgjah1Wr6VW0UDDc+cM4H53pomWlc+nD4eDePkeQN5ziDAt0dmpWzhChpR0EPd7mxBrL+7ZEFReihpG4NgfkVVVgAIAvAfABMR/AYpahcsYbRcb55957Q6q8sqS+jXYABAO/MGTlvC3hSAAAAAElFTkSuQmCC');
+}
+
+img.bookmark {
+    height: 0px;
+    width: 61px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAUCAYAAAA+wTUXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKRJREFUeNrsmEsOgCAMRBnj8by79/ASY2Lc2CigrT/abjTYCA+mg4JpHJicRb9e4YR3WeAuOYyA9lbTl2pDeAEz/sBM+17gIAcVfd2+0iwMvpQDcY8M6KfkzROKYOs1LYGtwKlVgBYahhJkBRAt+usNBguF/OV7+Hd5S4PCiQnkxefN7tNq8Pgie+sHwMgTbjcyVLQ9mRPyDuiA3ta0qyOjWYABALglIDyaeaFpAAAAAElFTkSuQmCC');
+}
+
+img.unbookmark {
+    height: 0px;
+    width: 61px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAUCAYAAAA+wTUXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALBJREFUeNrsmN0OgCAIhT2ux+vde49egrbWRaPEH5i5kJuaHqMPQTPs20rBmS3XFU54zwmOwaFNaG81/ch7Vue8zUrD/UJ4H25IaJDzFS0WhkINNWrA7iGAdktvUmpSGTJ8TZNyHIzBpTJSQ6NCA6PgUuZ5uX6TmYaBhhiQxle39IbBeFQGkBr7f7tPi+Dz4+QWpbf6+upQQkYaEboEEAVto2nmgWNCe1rIXP0yOgQYAIq/Kj6dQpkDAAAAAElFTkSuQmCC');
+}
+
+td.rating { /* lets put this here why not */
+    padding: 0px 4px 0px 4px !important;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/5stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    /* aaaaaaa */
+    background: url('data:image/gif;base64,R0lGODlhLAAQALMOAIZvAcKnJM+0MbKXFJ+EAbabGNC1MsSpJqOIBYlxAWhWAbWaF9e8OQAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFXgEOACwAAAAALAAQAAAESLAxSWe9d1qNufZUFoKbKJbg2agsSa5va8b0bKfu3emcjPMjIKP2K+6MPeJx+RHCnD5mEDmtKJPQaxVLRVmz4O5THG2StV5OBAAh+QQFBQAOACwAAAAALAAQAAAESNAJSWe9d1qNufZUFoKbKJbg6agsSa5va8b0bKfu3emcjPMjoKD2K+6MPeJx+RHCnD5mEDmtKJPQaxVLRVmz4O5THG2StV5OBAAh+QQFBQAOACwAAAAALAAQAAAESNAFSWe9d1qNufZUFoKbKJbg6agsSa5va8b0bKfu3emcjPMjYKD2K+6MPeJx+RHCnD5mEDmtKJPQaxVLRVmz4O5THG2StV5OBAAh+QQFBQAOACwAAAAALAAQAAAESNANSWe9d1qNufZUFoKbKJbg6agsSa5va8b0bKfu3emcjPMj4KD2K+6MPeJx+RHCnD5mEDmtKJPQaxVLRVmz4O5THG2StV5OBAAh+QQFBQAOACwAAAAALAAQAAAESNARSWe9d1qNufZUFoKbKJbg6agsSa5va8b0bKfu3emcjPMjIKH2K+6MPeJx+RHCnD5mEDmtKJPQaxVLRVmz4O5THG2StV5OBAAh+QQFBQAOACwAAAAALAAQAAAESNABSWe9d1qNufZUFoKbKJbg6agsSa5va8b0bKfu3emcjPMjIKD2K+6MPeJx+RHCnD5mEDmtKJPQaxVLRVmz4O5THG2StV5OBAAh+QQFBQAOACwAAAAALAAQAAAESNApSWe9d1qNufZUFoKbKJbg6agsSa5va8b0bKfu3emcjPMjoKL2K+6MPeJx+RHCnD5mEDmtKJPQaxVLRVmz4O5THG2StV5OBAAh+QQFBQAOACwAAAAACAAQAAAEFtAtSde8tFaM9eUZaHkOOYKmWIpqSkYAIfkEBQUADgAsCQAAAAgAEAAABBbQLUnXvLRWjPXlGWh5DjmCpliKakpGACH5BAUFAA4ALBIAAAAIABAAAAQW0C1J17y0Voz15RloeQ45gqZYimpKRgAh+QQFBQAOACwbAAAACAAQAAAEFtAtSde8tFaM9eUZaHkOOYKmWIpqSkYAIfkEBQUADgAsJAAAAAgAEAAABBbQLUnXvLRWjPXlGWh5DjmCpliKakpGACH5BAUFAA4ALAAAAAAIABAAAAQbsDFJ2by0Voz19E2ohdZIZhInmmV3duoXx00EACH5BAUFAA4ALAkAAAAIABAAAAQcsDFJ2by06t16llMXip/FeaNJeiuIslgYZ7M5RwAh+QQFBQAOACwSAAAACAAQAAAEHLAxSdm8tOrd+p4d6H2eWGaiGaLnmK0YGEvzFAEAIfkEBQUADgAsGwAAAAgAEAAABBqwMUnZvLRWPJvnn+ZpHTiaZohl7DmSGWjBEQAh+QQFBQAOACwkAAAACAAQAAAEG7AxSdm8tGo9m8eWt31VN3ImJoKkyoYsJ71NBAAh+QQFBQAOACwFAAMAIgAKAAAEPNA5RpmUld58MffgZIVit1matpFqabqf2c6jPMYdfb5wJao6Uu7mCwVdNk/wONuVgERnb0dDnYq/T2YUAQAh+QQFBQAOACwAAAAALAAQAAAEY9AZSWe9d1qNufZUFoKbKJbg6agsSa4rB8chLc9pisOWvd+8iq7WI/5qRlQQgwQOfYahdAnd+ZjFXrbJDH66WivX6b1yaeVyETpFu7dudVU+Q4rlUdOrpe/n/B2AX3+EgYUcEQAh+QQFBQAOACwAAAAALAAQAAAEY9AdSWe9d1qNufZUFoKbKJbg6agsSa4rB8chLc9pisOWvd+8iq7WI/5qRlQQgwQOfYehdAnd+ZjFXrbJDH66WivX6b1yaeVyETpFu7dudVU+Q4rlUdOrpe/n/B2AX3+EgYUcEQAh+QQFBQAOACwAAAAALAAQAAAEY9AVSWe9d1qNufZUFoKbKJbg6agsSa4rB8chLc9pisOWvd+8iq7WI/5qRlQQgwQOfYWhdAnd+ZjFXrbJDH66WivX6b1yaeVyETpFu7dudVU+Q4rlUdOrpe/n/B2AX3+EgYUcEQAh+QQFBQAOACwAAAAALAAQAAAEY9AhSWe9d1qNufZUFoKbKJbg6agsSa4rB8chLc9pisOWvd+8iq7WI/5qRlQQgwQOfYihdAnd+ZjFXrbJDH66WivX6b1yaeVyETpFu7dudVU+Q4rlUdOrpe/n/B2AX3+EgYUcEQAh+QQFBQAOACwAAAAALAAQAAAEY9AlSWe9d1qNufZUFoKbKJbg6agsSa4rB8chLc9pisOWvd+8iq7WI/5qRlQQgwQOfYmhdAnd+ZjFXrbJDH66WivX6b1yaeVyETpFu7dudVU+Q4rlUdOrpe/n/B2AX3+EgYUcEQAh+QQFXgEOACwAAAAALAAQAAAEY9ApSWe9d1qNufZUFoKbKJbg6agsSa4rB8chLc9pisOWvd+8iq7WI/5qRlQQgwQOfYqhdAnd+ZjFXrbJDH66WivX6b1yaeVyETpFu7dudVU+Q4rlUdOrpe/n/B2AX3+EgYUcEQAh+QQFBQAOACwAAAAAAQABAAAEAtBFACH5BAUFAA4ALCQAAAAIABAAAAQbsC1J17y0aj2bx5a3fVU3ciYmgqTKhiwnvU0EACH5BAUFAA4ALBsAAAAJABAAAAQasC1Jp60t342z7tjkhR43muQJitT4qSgntxEAIfkEBQUADgAsEgAAAAkAEAAABBywLUmnrS3fq2n+WCeCoWeCnDmR5Xp+brfB2MxFACH5BAUFAA4ALAkAAAAJABAAAAQcsC1Jp60t36tp/h7WgRxWkl85gaMYdqqZypsXAQAh+QQFBQAOACwAAAAACQAQAAAEG7AtSaetLd+Np8bflYUj55UUKaKnOaos2M1iBAAh+QQFBQAOACwAAAAACAAQAAAEFtAxSdm8tFaM9eUZaHkOOYKmWIpqSkYAIfkEBQUADgAsCQAAAAgAEAAABBbQMUnZvLRWjPXlGWh5DjmCpliKakpGACH5BAUFAA4ALBIAAAAIABAAAAQW0DFJ2by0Voz15RloeQ45gqZYimpKRgAh+QQFBQAOACwbAAAACAAQAAAEFtAxSdm8tFaM9eUZaHkOOYKmWIpqSkYAIfkEBQUADgAsJAAAAAgAEAAABBbQMUnZvLRWjPXlGWh5DjmCpliKakpGADs=') top left no-repeat;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/4stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    /* Squares */
+    background: url('data:image/gif;base64,R0lGODlhLAAQAKEDAAAAAOLISerPTP///ywAAAAALAAQAAACTISMl7unzoCcDdVXL90SQg16FhdmIiaS09mZbkqyZSqrMyPXXP7imc2j9T6xoSUYUSE/y9HOiPLBlNCWcLppRpk/6lUKJj6/gWPVVgAAOw==') top left no-repeat;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/3stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    background: url('data:image/gif;base64,R0lGODlhLAAQAIACAAAAAOrPTCwAAAAALAAQAAACR0SMl7unAKOcDVXlGN0z5wt5FseJWAWSqhmirLq9MgrH7i3WHc68+p6b5X6tIO9DjAh7NOLy40umniPn0RJNUk9Dq/GrSRYAADs=') top left no-repeat;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/2stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    /* Squares */
+    background: url('data:image/gif;base64,R0lGODlhLAAQAIACAAAAAOrPTCwAAAAALAAQAAACQESMlwvtDyM8FK0qs34Vd7uF3NV8ioiWJHmmm6l+Lgqzc1jX97vqe5Rb/TJB2XDSEx6RMt/SBn2OmspnkSFtFAAAOw==') top left no-repeat;
+}
+
+td.rating img[src="http://fi.somethingawful.com/rate/default/1stars.gif"] {
+    height: 0px;
+    width: 44px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    /* Squares */
+    background: url('data:image/gif;base64,R0lGODlhLAAQAKEDAAAAAOnOS+rPTP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFBQADACwAAAAALAAQAAACVhSMp8nrDcGbsdJn89VmSpl8nyaCS2OanaKOTvqGL0vLLcygF+7eNSuLlH6rlSg3E7qMy2Yo6Pn5ihSdksqjoqw9adJ5isJ4ZHCHs0lX0Gw10B0JwB8FACH5BAEFAAMALAAAAAAsABAAAAJVhIynyesNxZux0mfz1YaCj4AgxogfRh7nyKotuyoptNZheS+4l7+265iRYjAcUaWr/EwiYES4KzqnpaRV6utNZsTlkqobRr/FY4ezSSvVbHSiDXcXAAA7') top left no-repeat;
+}
+dd.title img[src="http://fi.somethingawful.com/customtitles/tek9s-2.png"] {
+    height: 0px;
+    width: 148px;
+    overflow: hidden;
+    padding-bottom: 42px;
+    background: url('data:image/gif;base64,R0lGODlhlAAqAMZRAAAAAAIAAAcCAAsGAAwHABQOABgRAB0VAB8YACAcCiEdCiUeACQgCykgACgjDS4lADIoADErEDctADswADgyEkA1AEE2AEY7AEY+Fks/Ak5AAlJFA1VHBVhKBlxNB15QCWFSCWJTCV5THmRVCmBVH2lZC2xcDG9eDm1gI3JhD3VjD3ZkEHlnEHVnJnxrEX5sE4BtE4NwFIVxFIZyFYh1FYl2Fot3Fo97GJJ8GZN+GZSAGpeBGpiDGpmEG5uFG5yGG56IHaCJHaGKHqKLHqKNHqONHqWOH6aPH6eQH6iSIKqSIKuTIKyUIq+XIrGZI7KbI+rPTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFFAB/ACwAAAAAlAAqAAAH/oAAgoOEhYaHiImKi09PKYuQkZKTlJWWl4pNTxwBmJACnqGio6MmHKSGFgWorK2uggSwr7O0tZYePAAyMKw7HwFBCLbDxIcxPAE8MaQ7MgZDp8XS0ioSugMenh4QLAAh0dPh4uPk5ZAjEIQHJ5UuhR8V5vKiKUGdhMqTPDKFDUTx8wJS4gBE0IFCPEpEsrFsUIBVzw6Sg0KxosWLFAVh3IhR40ZDFxHdAzDBEChIAwoJaBCJo0VRLjl6jPkRgMxCIQ0pHLQg3SgNAE4GCIGIJhSYRl/aTJrzJqGchAYoDCBkARJrGQjN8HkohAlCWVX46JALwNdDRpEyPfpUaduK/jjdDoJa6AA0A0gMEuqQ95ABJasGSVwC4BhaujPhXlqb8W1jx2znyk0cuVCGDQACJFkAwMMACxYE2MCMiEWKCRbSdQAwooggExIhV6Y8e5LipbdvUy76eHdc3Yg6PBDE4ciRD5GGHPExyAPLRB1/A7f9GCpwxJJnY8duDMAAd5ZmAHigYlF02bRdZs9evTdu9+shg5x8qEeMA0TAUXrxI8AO8dBt1xRTAU4nXWQGsocgfYjM8AIAPFzgyQo1AKADUbzRF91aBcJ3YHwZtpegPOcpWOKH843oG26KWMfgIZwBIEwoMRrQIXw03XiYiu/VFKKPkcCgA4SPFLJBEfwI/sJDEbENgsMyQqz2Y205/rijh7JxZ6KWidgwZBArFLIECEwM58IRNwxRSA43ACDECC0KqNSJLb24pZ090nmOIHASUgMSagLQABJjFgInAqTdSOWAeFoZZ25YpteoOXRuyKWOj4qYKZCT3DASIUTEVsIOh1TQUJ1JHTjppT2CeOWCPBrywRCBTcDDDgMcVAMP7BRgwa0nXUDEcJJwmGWkCpo3qXwrTtIBDoIsEEMM95wQg5QNxMCLkk1CYuydtaWIbKvUQRqrQLQVyyWrWl6n4bKDACSDEkEE9kMIQwJQgRFBZEOSWufmienAv6HIbCQ5iBfEDU0oUR4AmhChpBJs5A7ZQ5ie6PlquM2+mqHBySJsg5seSOBEE4Mo4URZEADBBAcxDPkDxpScqDG5IHucs5zjDnLKACWpUMQOJQGARBFBCGLB0QeRlmi57trJHbvvRo3jpCmZBYAB/kZy1k6feovYzXRVCW5MkorLMSFGsETYCa5JskQBCBDGAqlic3o2z5wypphTISuCRDpKmBVoJEnkmhcMP6Cq8bd7q5pqnlfHasMqb8cdyRIDIFA4BzRv+iLk6GJy0pAZABjJkALkUPrroUA7QeiL0BBUm7DnXskyKRgxydwAbKv78JJ8UFZyWaMbCAAh+QQBFAB/ACxCAAAAKQAEAAAHKIAAgoOEhYaHiIItTU2Jjo+GEQ4ijIMYFJCZhigkhQqCDJqioQAJgoEAOw==') top left no-repeat;
+}
+#thread dl.userinfo dt.author.role-mod { 
+	background-image:url('data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGBJREFUeNpi/P//PwM5gAXGeH3BF10OZiIjsqCowWYwzcRAJmDCYQs28B+Xxv94NGPIsSBJMuIw/T+6PynyIwsOWxjRQhVdDquNjHjEGAn5kYGQgWT7kZHcJEe2jQABBgA4lxUa7hb9eAAAAABJRU5ErkJggg==') !important; 
+}
