@@ -19,13 +19,15 @@
 		<array>
 			<string>Amber</string>
 			<string>Green</string>
+			<string>Amiga</string>
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
 		<key>Values</key>
 		<array>
-			<string>amber</string>
-			<string>green</string>
+			<string>219a.css</string>
+			<string>219.css</string>
+			<string>amiyos.css</string>
 		</array>
 	</dict>
 	<dict>

@@ -65,17 +65,7 @@ function changeTheme() {
 
 
 function getTheme() {
-	var theme = safari.extension.settings.theme;
-	var css_file = '';
-	switch(theme) {
-		case 'amber':
-			css_file = '219a.css';
-			break;
-		case 'green':
-			css_file = '219.css';
-			break;
-	}
-	return css_file;
+	return safari.extension.settings.theme;
 }
 
 function getSignature() {
