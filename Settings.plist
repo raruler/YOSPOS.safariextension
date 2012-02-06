@@ -17,9 +17,10 @@
 		<string>Theme</string>
 		<key>Titles</key>
 		<array>
-			<string>Amber</string>
-			<string>Green</string>
-			<string>Amiga</string>
+			<string>Amber - Toby</string>
+			<string>Green - Anal Volcano</string>
+			<string>Amiga - Wheany</string>
+			<string>Macinyos - davejk</string>
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
@@ -28,6 +29,7 @@
 			<string>219a.css</string>
 			<string>219.css</string>
 			<string>amiyos.css</string>
+			<string>macinyos.css</string>
 		</array>
 	</dict>
 	<dict>

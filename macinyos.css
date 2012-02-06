@@ -1,0 +1,603 @@
+﻿/* YOSPOS System Software 1.0
+ * Dave Kellaway, Susan Kare, Jef Raskin
+ * Copyright 1984 Apple Computer Inc.
+ */
+ 
+ 
+/* Mac system fonts */
+@font-face {
+	font-family: Chicago;
+	src: url('./macinyos/chicago.ttf');
+}
+@font-face {
+    font-family: 'Chicago Bold';
+    src: url('./macinyos/chicaco-bold.ttf');
+}
+* {
+    font-family: 'Chicago', 'Monaco', 'Consolas', 'Courier', Monospace !important;
+}
+textarea, input[type="text"] {
+    font-family: 'Monaco', 'Consolas', 'Courier', Monospace !important;
+}
+a {
+    color: #000 !important;
+}
+a:hover {
+	-webkit-animation-name: none !important;
+}
+
+
+/* Page layout */
+body,  #container {
+    background-image: url('./macinyos/wallpaper.png') !important;
+    background-repeat: repeat !important;
+}
+#container, #forums, div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+
+/* Hide shit nobody cares about */
+.flag_container, #nav_purchase, #filter, #ac_timemachine, #searchboxes {
+    display: none !important;
+}
+
+
+/* Black and white images (disabled due to only working in nightlies and also being super annoying) */
+/* img {
+	-webkit-filter: saturate(0%);
+}
+img:hover {
+	-webkit-filter: saturate(100%);
+} */
+
+
+/* Turn the navigation bar into the menu bar */
+#globalmenu {
+    background-color: #000 !important;
+    border-bottom: 1px solid #000 !important;
+    z-index: 1 !important;
+	height: 6px !important;
+}
+#navigation {
+    position: absolute;
+    top: 0; 
+    left: 0; right: 0;
+    margin: 0 !important;
+    width: auto !important;
+    z-index: 10 !important;
+    overflow: hidden !important;
+    
+    display: block !important;
+    padding: 0 !important;
+    height: 22px !important;
+    background-color: #fff !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+	border-bottom: 1px solid #000;
+    
+    font-size: 1px !important;
+    color: #fff !important;
+}
+#navigation a {
+    float: left !important;
+    color: #000 !important;
+    padding: 4px 6px !important;
+    margin: 0 0 0 4px !important;
+    text-decoration: none !important;
+	font-family: 'Chicago' !important;
+	font-size: 12px !important;
+}
+#navigation a:active {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+/* Use the 'SA Forums' link for the fruit menu */
+#navigation li.first a {
+    background-image: url('./macinyos/menu_apple.png');
+    background-repeat: no-repeat;
+    background-position: 6px 4px;
+    width: 26px !important;
+    height: 16px !important;
+	padding: 4px 0 !important;
+    color: transparent !important;
+    margin-left: 12px !important;
+}
+#navigation li.first a:active {
+    background-image: url('./macinyos/menu_apple_on.png');
+}
+
+
+/* Add the window border and drop shadow */
+#content {
+    padding: 0 !important;
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    box-shadow: 1px 1px 1px #000 !important;
+    margin: 22px 0 !important;
+}
+
+
+/* Turn the breadcrumb bar into a window title */
+.breadcrumbs {
+    display: none !important;
+}
+.breadcrumbs:nth-of-type(1), .WindowTitle {
+    display: block !important;
+    border-bottom: 1px solid #000 !important;
+    padding: 4px 0 1px !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative;
+    
+    background-image: url('./macinyos/window_title.png');
+    background-repeat: repeat-x;
+    background-color: #fff !important;
+    background-position: 0 3px !important;
+}
+.breadcrumbs:nth-of-type(1) .mainbodytextlarge, .WindowTitle .mainbodytextlarge {
+    display: block;
+    background-image: url('./macinyos/window_right.png');
+    background-repeat: no-repeat;
+    background-position: right 2px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.breadcrumbs:nth-of-type(1) b, .WindowTitle b {
+    background-color: #fff;
+    padding: 0 4px !important;
+    font-size: 0px !important;
+}
+.breadcrumbs:nth-of-type(1) a, .WindowTitle a {
+    background-color: #fff;
+    color: #000 !important;
+    text-decoration: none !important;
+    padding: 0 6px !important;
+    border: none !important;
+}
+.breadcrumbs:nth-of-type(1), .WindowTitle, .breadcrumbs:nth-of-type(1) a, .WindowTitle a {
+	font-family: 'Chicago' !important;
+	font-size: 12px !important;
+}
+/* Hide everything except YOSPOS to save space. The fruit menu still goes back to the forums root */
+.breadcrumbs:nth-of-type(1) a:nth-of-type(1), .WindowTitle a:nth-of-type(1),
+.breadcrumbs:nth-of-type(1) a:nth-of-type(2), .WindowTitle a:nth-of-type(2),
+.breadcrumbs:nth-of-type(1) a:nth-of-type(3), .WindowTitle a:nth-of-type(3) {
+    display: none;
+}
+.breadcrumbs:nth-of-type(1) a:nth-of-type(4):after, .WindowTitle a:nth-of-type(4):after {
+    content: ' for Macintosh';
+}
+.breadcrumbs:nth-of-type(1) a:nth-of-type(5):before, .WindowTitle a:nth-of-type(5):before {
+    content: ' - ';
+    padding-right: 6px;
+}
+
+
+/* Turn pages, online user counts, moderators and thread info into the window information bar */
+#mp_bar {
+    margin: 0 !important;
+}
+.pages.top, #mp_bar .pages, .pages.bottom {
+    display: block !important;
+    margin: 0 !important;
+    background-color: #fff;
+    background-image: url('./macinyos/doubleborder.png');
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    border-bottom: 1px solid #000 !important;
+    padding: 7px 12px 6px !important;
+    width: auto !important;
+    text-align: left !important;
+    height: 16px !important;
+}
+#mp_bar .pages, .pages.top, #mp_bar .pages .curpage, .pages.top .curpage, #mp_bar .pages a, .pages.top a, .pages.bottom, .pages.bottom a {
+    font-family: sans-serif !important;
+    font-size: 11px !important;
+    color: #000 !important;
+    font-weight: normal !important;
+    background: transparent !important;
+}
+#mp_bar .pages .curpage, .pages.top .curpage, .pages.bottom .curpage {
+    margin: 0 8px 0 3px !important;
+    font-weight: bold !important;
+}
+.breadcrumbs .online_users {
+    position: absolute;
+    top: 32px;
+    right: 8px;
+    color: #fff !important;
+}
+.breadcrumbs .online_users, .breadcrumbs .online_users a {
+    display: inline !important;
+    font-family: Sans-Serif !important;
+    font-size: 11px !important;
+    padding: 0 !important;
+}
+#mods {
+    position: absolute;
+    display: block !important;
+    top: 67px;
+    left: 25% !important;
+    width: 50% !important;
+    text-align: center !important;
+}
+#mods, #mods a {
+    font-family: Sans-Serif !important;
+    font-size: 11px !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+}
+
+
+/* Forum list styles */
+#forum {
+    margin: 8px 8px -6px !important;
+}
+#forum th, #forum td {
+    color: #000 !important;
+    border-color: #aaa !important;
+}
+/* Sorting options */
+th.lastpost a img[src="http://fi.somethingawful.com/images/sortasc.gif"] {
+    width: 0 !important;
+    height: 0 !important;
+    margin-top: 2px !important;
+    padding: 14px 16px 0 0 !important;
+    background-image: url('./macinyos/sortasc.png');
+}
+th.lastpost a img[src="http://fi.somethingawful.com/images/sortdesc.gif"] {
+    width: 0 !important;
+    height: 0 !important;
+    margin-top: 2px !important;
+    padding: 14px 16px 0 0 !important;
+    background-image: url('./macinyos/sortdesc.png');
+}
+/* Thread page links */
+.title_pages {
+    padding: 0 !important;
+}
+.title_pages, .title_pages a {
+    font-family: Sans-Serif !important;
+    font-size: 10px !important;
+    color: #aaa !important;
+    background: transparent !important;
+}
+/* Stickied threads */
+.title_sticky .info a.thread_title 
+{
+    background-image: url('./macinyos/sticky.png') !important;
+}
+/* Last-Seen button */
+.lastseen {
+    border: none !important;
+    background: transparent !important;
+}
+.lastseen .count {
+    margin-left: 8px !important;
+	border-left-color: #000 !important;
+}
+.lastseen a {
+    padding: 4px 8px 2px !important;
+    border: 1px solid #000 !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+    width: auto !important;
+}
+.lastseen .count:after {
+    content: ' posts';
+}
+.lastseen .x {
+	display: none !important;
+    content: 'x';
+    padding: 1px 5px 3px !important;
+}
+.lastseen a:active {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+
+/* Bottom of forum view */
+.pages.bottom {
+    border: none !important;
+    border-top: 1px solid #000 !important;
+    margin: 0 !important;
+    padding: 8px 12px 8px !important;
+}
+.forumbar {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.forumbar .postbuttons {
+    margin: 22px 8px -28px 0 !important;
+}
+.online_users.bottomonline {
+    display: block !important;
+    margin: -27px 0 6px 30% !important;
+    width: 40% !important;
+    text-align: center !important;   
+    color: #fff !important;
+}
+.online_users.bottomonline a {
+    font-family: Sans-Serif !important;
+    text-decoration: none !important;
+    color: #000 !important;
+}
+.mainbodytextlarge {
+    display: none !important;
+}
+.WindowTitle .mainbodytextlarge, .breadcrumbs .mainbodytextlarge {
+    display: block !important;
+}
+
+
+
+/* Thread buttons */
+.threadbar.top {
+    border: none !important;
+    position: absolute;
+    top: 63px; 
+    right: 18px;
+    padding: 0 !important;
+    background: transparent !important;
+}
+.threadbar .postbuttons a img,
+.forumbar img[alt="Post New Thread"] {
+    width: 0 !important;
+    height: 0 !important;
+    padding: 21px 61px 0 0 !important;
+    background-repeat: no-repeat;
+}
+.threadbar .postbuttons li:nth-of-type(1) img {
+    content: 'Mark';
+}
+/* Post */
+.threadbar .postbuttons li:nth-of-type(2) a img,
+.forumbar img[alt="Post New Thread"] {
+    background-image: url('./macinyos/post.png');
+}
+.threadbar .postbuttons li:nth-of-type(2) a:active img,
+.forumbar a:active img[alt="Post New Thread"] {
+    background-image: url('./macinyos/post_on.png');
+}
+/* Reply */
+.threadbar .postbuttons li:nth-of-type(3) a img {
+    background-image: url('./macinyos/reply.png');
+}
+.threadbar .postbuttons li:nth-of-type(3) a:active img {
+    background-image: url('./macinyos/reply_on.png');
+}
+
+
+
+/* Threads */
+#thread {
+    padding: 8px !important;
+}
+.post td {
+    border: 1px solid #aaa !important;
+}
+.userinfo dt, .userinfo dd {
+    color: #000 !important;
+}
+.userinfo dt.role-mod, .userinfo dt.role-admin {
+    background-image: url('./macinyos/modstar.png') !important;
+}
+.seen1 .postbody, .seen2 .postbody {
+    background-image: url('./macinyos/read.png');
+}
+
+
+
+
+/* Posts */
+.post {
+    margin-bottom: 8px !important;
+}
+.postbody, .postbody * {
+    font-family: 'Monaco', 'Consolas', 'Courier', Monospace !important;
+}
+.postbody h4, .postbody h5 {
+    font-family: 'Chicago', 'Monaco', 'Consolas', Monospace !important;
+}
+
+
+/* Post buttons */
+.post .postbuttons {
+    padding: 5px 4px 0 !important;
+}
+.post .postbuttons img {
+    width: 0 !important;
+    height: 0 !important;
+    padding: 21px 61px 0 0 !important;
+    background-repeat: no-repeat;
+}
+.post .postbuttons .alertbutton img {
+    background-image: url('./macinyos/report.png');
+}
+.post .postbuttons .alertbutton a:active img {
+    background-image: url('./macinyos/report_on.png');
+}
+.post .postbuttons img[alt="Edit"] {
+    background-image: url('./macinyos/edit.png');
+}
+.post .postbuttons a:active img[alt="Edit"] {
+    background-image: url('./macinyos/edit_on.png');
+}
+.post .postbuttons img[alt="Quote"] {
+    
+    background-image: url('./macinyos/quote.png');
+}
+.post .postbuttons a:active img[alt="Quote"] {
+    background-image: url('./macinyos/quote_on.png');
+}
+
+/* Profile links */
+.profilelinks {
+    padding: 8px 0 0 4px !important;
+}
+.profilelinks a {
+    border: 1px solid #000 !important;
+    border-radius: 4px;
+    font-size: 12px !important;
+    padding: 3px 6px 0 !important;
+    text-decoration: none !important;
+}
+.profilelinks a:active {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Stuff underneath avatars */
+.postdate {
+    padding: 4px 0 0 !important;
+}
+.postdate a:nth-of-type(1) img {
+    width: 0 !important;
+    height: 0 !important;
+    margin: 1px 0 -2px 10px !important;
+    padding: 10px 8px 0 0 !important;
+    background-image: url('./macinyos/posticon-seen.png');
+    background-repeat: no-repeat !important;
+}
+
+
+
+/* Bottom of thread view */
+.threadbar.bottom {
+    border: none !important;
+    margin: 0 8px 0 0 !important;
+    padding: 0 !important;
+}
+.threadrate {
+    margin: 0 0 0 30% !important;
+    width: 40% !important;
+    text-align: center !important;
+    color: #000 !important;
+}
+.threadrate b {
+    display: none !important;
+}
+.pages.bottom {
+    border-bottom: none !important;
+    margin: -28px 0 4px !important;
+}
+.pages.bottom.thread {
+    margin-bottom: 0 !important;
+}
+form[action="forumdisplay.php"] {
+    display: none !important;
+}
+
+
+
+/* Move that subscribe link way up top */
+.subscribe {
+    position: absolute;
+    top: 67px;
+    left: 40%;
+    width: 20%;
+    margin: 0 !important;
+}
+.subscribe a {
+    font-family: Sans-Serif !important;
+    font-size: 11px !important;
+}
+
+
+
+/* Copyright info */
+#copyright {
+    background-image: url('./macinyos/about.png');
+    background-repeat: no-repeat;
+    text-align: left !important;
+    color: #fff !important;
+    font-size: 9px !important;
+    
+    width: 362px !important;
+    height: 22px !important;
+    overflow: hidden !important;
+    padding-top: 182px !important;
+    text-indent: 10px !important;
+    line-height: 22px !important;
+    box-shadow: 1px 1px 1px #000;
+}
+#copyright a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+#copyright a:nth-of-type(1):after {
+    content: ' - MacinYOS 128k 1.0';
+}
+
+
+
+/* Reply form */
+table.standard, div.standard {
+    margin: 8px 8px 0 !important;
+    border: 1px solid #000 !important;
+    width: 80% !important;
+}
+table.standard th, table.standard td, div.standard h2 {
+    border-color: #000 !important;
+    background-color: #fff !important;
+    color: #000 !important;
+}
+table.standard th {
+    color: #000 !important;
+    background-color: #fff !important;
+    background-image: url('./macinyos/window_title.png');
+    background-repeat: repeat-x;
+    background-position: 0 3px !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    padding: 4px 0 2px !important;
+}
+table.standard th b {
+    background-color: #fff !important;
+    padding: 0 8px !important;
+}
+table.standard th b:after {
+    content: '.txt - YOSPoster';
+}
+table.standard .smalltext, table.standard .smalltext * {
+    vertical-align: baseline !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+div.standard {
+    background-color: #fff !important;
+}
+div.standard h2 {
+    border-bottom: 1px solid #000 !important;
+}
+/* Jesus christ these selectors are terrible */
+form[action="newreply.php"] div[style="text-align:center;"]:first-of-type,
+form[action="newthread.php"] div[style="text-align:center;"]:first-of-type,
+form[action="editpost.php"] div[style="text-align:center;"]:first-of-type {
+    display: table !important;
+    border: 1px solid #000;
+    border-top: none !important;
+    margin: -20px 0 8px 8px !important;
+    width: 80% !important;
+}
+form[action="newreply.php"] div[style="text-align:center;"]:first-of-type input[type="submit"],
+form[action="newthread.php"] div[style="text-align:center;"]:first-of-type input[type="submit"],
+form[action="editpost.php"] div[style="text-align:center;"]:first-of-type input[type="submit"] {
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    border-radius: 5px !important;
+    font-size: 12px !important;
+    margin: 8px 8px !important;
+    padding: 4px 8px 0px !important;
+}
+form[action="newreply.php"] div[style="text-align:center;"]:first-of-type input[type="submit"]:active,
+form[action="newthread.php"] div[style="text-align:center;"]:first-of-type input[type="submit"]:active,
+form[action="editpost.php"] div[style="text-align:center;"]:first-of-type input[type="submit"]:active {
+    background-color: #000 !important;
+    color: #fff !important;
+}

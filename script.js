@@ -1,3 +1,5 @@
+var base = safari.extension.baseURI;
+
 function isYOSPOS() {
 	css = $("link[rel=stylesheet][title='YOSPOS']");
 	return css.length > 0
@@ -8,9 +10,51 @@ if (isYOSPOS()) {
 	if($('input[name=signature]').length > 0)
 		safari.self.tab.dispatchMessage('getSignature');
 
-}
 	
-var base = safari.extension.baseURI;
+
+}
+
+/* Helper Functions */
+function resizeScanlineScreen()
+{
+	$("body > div.scanlines-screen").css({ width: window.innerWidth + "px", height: window.innerHeight + "px" });
+}
+
+String.prototype.replaceAll = function (target, replacement) {
+    var tx = this;
+    var ix = tx.indexOf(target);
+    while (ix != -1) {
+        tx = tx.replace(target, replacement);
+        ix = tx.indexOf(target);
+    }
+    return (tx);
+}
+
+/* Supporting code */
+$(document).ready(function (x) {
+    /* Fix for weird layout-breaking forums javascript (thanks Radium!) */
+    $('.breadcrumbs:first-of-type').addClass('WindowTitle');
+
+    /* Remove the crapload of NBSPs from the page list */
+    if ($('.pages').html()) {
+        $('.pages').html($('.pages').html().replaceAll('&nbsp;', ''));
+    }
+
+    /* Find that pesky online users */
+    $('.online_users').last().addClass('bottomonline');
+
+    /* Find the bottom bar on thread pages */
+    if ($('#thread').html()) {
+        $('.pages.bottom').addClass('thread');
+    }
+
+    /* Fix the Edit Post page's window title */
+    if ($('form[action="editpost.php"]').html()) {
+        $('form[action="editpost.php"] .standard th').html('<b>' + $('form[action="editpost.php"] .standard th').html() + '</b>');
+    }
+});
+	
+/* Message Handlers */
 
 function messageHandler(event) {
 	if(isYOSPOS()) {
@@ -82,9 +126,6 @@ function enableScanlines(settings) {
 	}
 }
 
-function resizeScanlineScreen()
-{
-	$("body > div.scanlines-screen").css({ width: window.innerWidth + "px", height: window.innerHeight + "px" });
-}
+
 
 safari.self.addEventListener("message", messageHandler, false);
