@@ -1,0 +1,39 @@
+/* Monochrome mode (requires setting) */
+.monochrome img {
+	-webkit-filter: saturate(0%);
+}
+.monochrome img:hover {
+	-webkit-filter: saturate(100%);
+}
+
+/* Font smoothing */
+body {
+	-webkit-font-smoothing: antialiased;
+}
+body.noFontSmoothing {
+    -webkit-font-smoothing: none !important;
+}
+
+/* Scanlines */
+body > .scanlines-screen, body > .scanlines-lines
+{
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@-webkit-keyframes scanlinesScroll 
+{
+	0%
+	{
+		background-position: 0 0;
+	}
+	
+	100%
+	{
+		background-position: 0 3px;
+	}
+}
