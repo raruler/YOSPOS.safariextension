@@ -24,9 +24,14 @@ function messageHandler(event) {
 		case 'getSignature':
 			getSignature();
 			break;
+		case 'getMonochrome':
+			changeMonochrome();
+			break;
+		case 'getFontSmoothing':
+			changeFontsmoothing();
+			break;
 	}
 }
-
 
 function settingChanged(event) {
 	switch(event.key) {
@@ -45,6 +50,12 @@ function settingChanged(event) {
 	case "corner_intensity":
 		changeScanlines();
 		break;
+	case "monochrome":
+		changeMonochrome();
+		break;
+	case "fontsmoothing":
+		changeFontsmoothing();
+		break;
 	}
 }
 
@@ -55,6 +66,18 @@ function changeScanlines() {
 						'corner_intensity' : safari.extension.settings.corner_intensity};
 	
 		messageAll("scanlines", settings);
+	}
+}
+
+function changeMonochrome() {
+	if(safari.extension.settings.monochrome) {	
+		messageAll("monochrome", "");
+	}
+}
+
+function changeFontsmoothing() {
+	if(safari.extension.settings.fontsmoothing) {	
+		messageAll("fontsmoothing", "");
 	}
 }
 
@@ -74,7 +97,6 @@ function getSignature() {
 	}
 }
 	
-
 function messageAll(message, data)
 {
 	for (var i = 0; i < safari.application.browserWindows.length; i++)

@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.7</string>
+	<string>3.0</string>
 	<key>CFBundleVersion</key>
-	<string>2.7</string>
+	<string>3.0</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -28,6 +28,7 @@
 			<key>End</key>
 			<array>
 				<string>tablebreak.js</string>
+				<string>fixup.js</string>
 				<string>script.js</string>
 			</array>
 			<key>Start</key>
@@ -38,7 +39,7 @@
 		</dict>
 		<key>Stylesheets</key>
 		<array>
-			<string>scanlines.css</string>
+			<string>options.css</string>
 		</array>
 	</dict>
 	<key>Description</key>
