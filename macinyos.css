@@ -1,13 +1,13 @@
 ﻿/* MacinYOS Stylesheet
  * davejk - dkellaway@mac.com
- * Props to toby, raruler, got dat wmd et al for code and suggestions
+ * Props to toby and raruler!!!
  */
  
 /* Development version of Windowed Mode. DO NOT USE YET if merging into another extension - very buggy and unfinished */
 /*@import url('./windowed.css');*/
  
 #copyright a:nth-of-type(1):after {
-    content: ' - MacinYOS 1.2'; /* <---- DON'T FORGET TO EDIT THIS <---- */
+    content: ' - MacinYOS 1.3'; /* <---- DON'T FORGET TO EDIT THIS <---- */
 }
 
  
@@ -227,8 +227,9 @@ body,  #container {
 	border-bottom: 0 !important;
 	color: #555 !important;
 }
-#mp_bar .pages a:hover, .pages.top a:hover {
+.pages a:hover {
 	color: #000 !important;
+	background-color: transparent !important;
 }
 .pages.bottom {
     background: transparent !important;
@@ -512,6 +513,7 @@ a[href="#top"] {
 	font-family: 'Geneva', sans-serif !important;
 }
 .userinfo dt.role-mod, .userinfo dt.role-admin {
+    padding: 2px 0 3px 20px !important;
     background-image: url('./macinyos/modstar.png') !important;
 }
 .seen1 .postbody, .seen2 .postbody {
@@ -537,7 +539,7 @@ a[href="#top"] {
     padding: 6px 0 2px 20px !important;
     background-image: url('./macinyos/edited.png') !important;
     font-style: normal !important;
-    font-family: 'Chicago' !important;
+    font-family: 'Chicago', sans-serif !important;
 }
 
 /* Post buttons */
@@ -630,6 +632,26 @@ form[action="forumdisplay.php"] {
 
 
 /* Thread rating buttons */
+#rateform_js_attach {
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    width: 163px;
+    margin-left: -80px;
+    
+    background-image: url('./macinyos/ratings.png');
+}
+#rateform_js_attach img {
+    height: 0px;
+    width: 21px;
+    overflow: hidden;
+    padding-bottom: 21px;
+}
+#rateform_js_attach img:last-child {
+    width: 58px;
+}
+
+/*
 .threadrate img.r1, .threadrate img.r2, .threadrate img.r3, .threadrate img.r4, .threadrate img.r5 {
     width: 0; height: 0;
     padding: 21px 21px 0 0;
@@ -654,6 +676,7 @@ form[action="forumdisplay.php"] {
     padding: 21px 58px 0 0;
     background-image: url('./macinyos/rate-digg.png');
 }
+*/
 
 
 

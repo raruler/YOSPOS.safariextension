@@ -9,10 +9,27 @@ String.prototype.replaceAll = function (target, replacement) {
     return (tx);
 }
 
+var ratingButtons = function () {
+		$('.threadrate img').each(function (idx) {
+			var src = $(this).attr('src');
+			if (src.match(/\/rate1/i)) {
+				$(this).addClass('r1');
+			} else if (src.match(/\/rate2/i)) {
+				$(this).addClass('r2');
+			} else if (src.match(/\/rate3/i)) {
+				$(this).addClass('r3');
+			} else if (src.match(/\/rate4/i)) {
+				$(this).addClass('r4');
+			} else if (src.match(/\/rate5/i)) {
+				$(this).addClass('r5');
+			} else if (src.match(/\/digg/i)) {
+				$(this).addClass('digg');
+			}});
+};
+
 /* Supporting code */
 $(document).ready(function (x) {
-
-    /* Fix for weird layout-breaking forums javascript (thanks Radium!) */
+  /* Fix for weird layout-breaking forums javascript (thanks Radium!) */
     if ($('.breadcrumbs').html()) {
         $('.breadcrumbs:first-of-type').addClass('WindowTitle');
     }
@@ -58,9 +75,6 @@ $(document).ready(function (x) {
         }
     });
 
-    /* Find rating buttons and apply classes after rating buttons load */
-    setTimeout(stagger, 250);
-
     /* Replace title bar text with shorter equivalents */
     $('.WindowTitle a').each(function (idx) {
 		if ($(this).text().match(/The Something Awful Forums/i)) {
@@ -70,33 +84,3 @@ $(document).ready(function (x) {
         }
     });
 });
-
-/* Paired timeouts required to circumvent weird forums javascript delay */
-var attempts = 0;
-var stagger = function () {
-    setTimeout(ratingButtons, 250);
-};
-var ratingButtons = function () {
-    $('.threadrate img').each(function (idx) {
-        var src = $(this).attr('src');
-        if (src.match(/\/rate1/i)) {
-            $(this).addClass('r1');
-        } else if (src.match(/\/rate2/i)) {
-            $(this).addClass('r2');
-        } else if (src.match(/\/rate3/i)) {
-            $(this).addClass('r3');
-        } else if (src.match(/\/rate4/i)) {
-            $(this).addClass('r4');
-        } else if (src.match(/\/rate5/i)) {
-            $(this).addClass('r5');
-        } else if (src.match(/\/digg/i)) {
-            $(this).addClass('digg');
-            attempts = 5;
-        }
-    });
-
-    attempts++;
-    if (attempts < 5) {
-        setTimeout(stagger, 500);
-    }
-};  
