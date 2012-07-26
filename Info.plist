@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>raruler</string>
 	<key>Builder Version</key>
-	<string>7534.55.3</string>
+	<string>8536.25</string>
 	<key>CFBundleDisplayName</key>
 	<string>YOSPOS</string>
 	<key>CFBundleIdentifier</key>
@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.0.1</string>
+	<string>3.0.5</string>
 	<key>CFBundleVersion</key>
-	<string>3.0.1</string>
+	<string>3.0.5</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -59,6 +59,6 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>https://files.me.com/raruler/aomwxr</string>
+	<string>https://squarenothing.com/yospos/update.plist</string>
 </dict>
 </plist>
