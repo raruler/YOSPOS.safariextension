@@ -23,6 +23,8 @@
 			<string>Macinyos - davejk</string>
 			<string>MacinyOS9 - CamH</string>
 			<string>MetrosPOS - Null Pointer</string>
+			<string>Winpos 95 - CamH</string>
+
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
@@ -34,6 +36,7 @@
 			<string>macinyos.css</string>
 			<string>macinyos9.css</string>
 			<string>metrospos.css</string>
+			<string>winpos.css</string>
 		</array>
 	</dict>
 	<dict>

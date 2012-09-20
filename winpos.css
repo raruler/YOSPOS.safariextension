@@ -1,0 +1,1199 @@
+﻿/* winpos Stylesheet
+ * davejk - dkellaway@mac.com
+ * Props to toby and raruler!!!
+ */
+ 
+/* Development version of Windowed Mode. DO NOT USE YET if merging into another extension - very buggy and unfinished */
+/*@import url('./winpos/windowed.css') !important;*/
+ 
+#copyright a:nth-of-type(1):after {
+    content: ' - winpos 1.3' !important; /* <---- DON'T FORGET TO EDIT THIS <---- */
+	color: #000  !important; }
+
+ h4 { -webkit-margin-before: 0px !important;
+	-webkit-margin-after: 0px !important;}
+ 
+/* Mac system fonts */
+@font-face {
+	font-family: Helvetica !important;
+	src: url('./winpos/Helvetica.ttf') !important;
+	color: #000  !important; }
+@font-face {
+    font-family: 'Helvtica Bold' !important;
+    src: url('./winpos/Helvetica.ttf') !important;
+	color: #000  !important; }
+* {
+    font-family: 'Helvetica', 'Monaco', 'Charcoal CY', 'Courier', Monospace !important;
+	color: #000  !important; }
+textarea, input[type="text"] {
+    font-family: 'Helvetica', 'Charcoal CY', 'Courier', Monospace !important;
+	color: #000  !important; }
+a {
+    color: #000 !important;
+	color: #000  !important; }
+a:hover {
+	-webkit-animation-name: none !important;
+	color: #000  !important; }
+
+
+
+/* Font smoothing */Ï
+body {
+	-webkit-font-smoothing: antialiased !important;
+	color: #000  !important;
+	height:100%; margin:0; padding:0;
+ }
+body.badFonts {
+    -webkit-font-smoothing: none !important;
+	color: #000  !important; }
+
+
+
+/* Page layout */
+body,  #container {
+    background-image: url('./winpos/wallpaper.png') !important;
+    background-repeat: repeat !important;
+	color: #000  !important;
+	height: 100%; 
+	min-height: 100%;
+}
+#container {
+	height: 100%;
+	padding: 4px 9px 8px 8px !important;
+	color: #000  !important; 
+}
+#something_awful {
+	min-height: 100%;
+	height: 100%;
+	overflow: auto;
+	margin-bottom: -28px !important;	
+}
+
+#container, #forums, div.threadbar, #subforums, #subforums td, #forum, #forum th, #forum td, #filter, div.forumbar, #thread table.post, #thread td, #forums, #forums th, #forums td, #pm, #pm th, #pm td, #info, #info th, #info td {
+    background-color: #c0c0c0 !important;
+	color: #000  !important; }
+
+
+
+/* Hide shit nobody cares about */
+.flag_container, #nav_purchase, #filter, #ac_timemachine, #searchboxes {
+    display: none !important;
+	color: #000  !important; }
+
+
+
+/* Monochrome mode (requires setting) */
+.monochrome img {
+	-webkit-filter: saturate(0%) !important;
+	color: #000  !important; }
+.monochrome img:hover {
+	-webkit-filter: saturate(100%) !important;
+	color: #000  !important; }
+
+
+/* Turn the navigation bar into the menu bar */
+#globalmenu {
+    background-color: #000 !important;
+   /* border-bottom: 1px solid #000 !important; */
+    z-index: 1 !important;
+    display: none !important;
+    width: 100% !important;
+	height: 28px !important;
+	color: #000  !important;
+	bottom: 0 !important;
+	 }
+
+#navigation {
+  	position: fixed !important;
+    left: 0px !important; right: 0 !important;
+    margin: 0 0 0 0px !important;
+    width: auto !important;
+    z-index: 10 !important;
+    overflow: hidden !important;
+    
+    display: block !important;
+    padding: 0 0 0 0px !important;
+    height: 28px !important;
+    background-color: #c0c0c0 !important;
+
+    
+    font-size: 1px !important;
+    color: #ddd !important;
+	background-image: url('./winpos/menubarbg.png') !important;
+	bottom: 0 !important;*/
+
+}
+#navigation a {
+    float: left !important;
+    color: #000 !important;
+    padding: 3px 5px 4px 5px !important;
+    margin: 3px 1px 4px 1px !important;
+    text-decoration: none !important;
+	font-family: 'Helvetica' !important;
+	font-size: 12px !important;
+	font-weight: normal !important;
+	color: #000  !important;
+	height: 12px !important;
+	border-width: 2px;
+	-moz-border-image: url('./winpos/borderbg.png') 2 repeat;
+	-webkit-border-image: url('./winpos/borderbg.png') 2 repeat;
+	-o-border-image: url('./winpos/borderbg.png') 2 repeat;
+	border-image: url('./winpos/borderbg.png') 2 fill repeat;
+/*	background-image: url('./winpos/buttonbg.png') !important;
+	background-repeat: no-repeat !important;	
+	background-position: 0px 0px !important;
+*/	
+}
+#navigation a:active {
+    background-color: #000 !important;
+    color: #ccc !important;
+	color: #000  !important; }
+/* Use the 'SA Forums' link for the start menu */
+#navigation li.first a {
+    background-image: url('./winpos/menu_apple.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: 0px 0px !important;
+    margin: 0px 0px 0 3px !important;
+    width: 58px !important;
+    height: 28px !important;
+	padding: 0px 0 65px 0 !important;
+    color: transparent !important;
+    margin-left: 0px !important;
+	margin-right: 1px !important;
+	border-width: 0px;
+}
+#navigation li.first a:active {
+    background-image: url('./winpos/menu_apple_on.png') !important;
+	color: #000  !important; }
+#navigation li {
+	color: #c0c0c0 !important;
+}
+
+#navigation:after
+{
+	display: block !important;
+	position: right 1px !important;
+	margin: 3px 2px 0px 0px !important;
+	content: url('./winpos/clock.png') !important;
+	right: 5px !important;
+	float: right !important;
+}
+
+/* Add the window border and drop shadow */
+#content {
+    padding: 0px !important;
+    background-color: #c0c0c0 !important;
+/*    border: 1px solid #000 !important; 
+    box-shadow: 1px 1px 1px #000 !important;*/
+    margin: 18px 0px 0px 0px !important;
+	position: relative !important;
+	color: #000 !important;
+
+	
+	border-width: 2px;
+	-moz-border-image: url('./winpos/borderbg.png') 2 repeat;
+	-webkit-border-image: url('./winpos/borderbg.png') 2 repeat;
+	-o-border-image: url('./winpos/borderbg.png') 2 repeat;
+	border-image: url('./winpos/borderbg.png') 2 fill repeat;
+}
+
+
+
+/* Turn the breadcrumb bar into a window title */
+.breadcrumbs {
+    /*display: none !important;*/
+	color: #000  !important; }
+.breadcrumbs:nth-of-type(1), .WindowTitle {
+    display: block !important;
+    border-bottom: 0px solid #000 !important;
+    padding: 0px 0 0px 8px !important;
+    text-align: left !important;
+    margin: -2px -2px -2px -2px !important;
+    position: relative !important;
+    height: 23px !important;
+
+    background-image: url('./winpos/window_title.png') !important;
+    background-repeat: repeat-x !important;
+    background-color: #ccc !important;
+    background-position: 0 1px !important;
+	color: #000  !important; }
+.breadcrumbs:nth-of-type(1) .mainbodytextlarge, .WindowTitle .mainbodytextlarge {
+    display: block !important;
+    background-image: url('./winpos/window_right.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 1px !important;
+	color: #000  !important;
+	padding: 2px 0px 0px 0px !important; }
+.breadcrumbs:nth-of-type(1) b, .WindowTitle b {
+    /* background-color: #ccc !important; */
+    margin: 0 26px 0 22px !important;
+    padding: 6px 0px 0px 0px !important;
+	display: inline-block !important;
+	height: 23px !important;
+	overflow: hidden !important;
+	color: #FFF  !important; 
+	text-align: left !important;
+	}
+.breadcrumbs:nth-of-type(1) a, .WindowTitle a {
+    /* background-color: #ccc !important; */
+    color: #FFF !important;
+    text-decoration: none !important;
+	margin-top: -0px !important;
+    padding: 0 0px !important;
+    border: none !important;
+	font-weight: normal !important;
+}
+.breadcrumbs:nth-of-type(1), .WindowTitle, .breadcrumbs:nth-of-type(1) a, .WindowTitle a {
+	font-family: 'Helvetica' !important;
+	font-size: 12px !important;
+	color: #FFF  !important; }
+
+
+
+/* Turn pages, online user counts, moderators and thread info into the window information bar */
+.pages { padding-right: 10px;
+	padding-top: 4px;
+	
+	 }
+#mp_bar {
+    margin: 0 !important;
+	color: #000  !important; }
+.pages.top, #mp_bar .pages, .pages.bottom {
+    display: block !important;
+    margin: 0 !important;
+    background-color: #c0c0c0 !important;
+    background-image: url('./winpos/doubleborder.png') !important;
+    background-repeat: repeat-x !important;
+    background-position: bottom left !important;
+   
+    padding: 12px 12px 7px !important;
+    width: auto !important;
+    text-align: left !important;
+    height: 18px !important;
+	color: #000  !important; }
+#mp_bar .pages, .pages.top, #mp_bar .pages .curpage, .pages.top .curpage, #mp_bar .pages a, .pages.top a, .pages.bottom, .pages.bottom a, .pages.bottom b, .pages.bottom span {
+    font-family: 'Helvetica', sans-serif !important;
+    font-size: 11px !important;
+    color: #000 !important;
+    font-weight: normal !important;
+	color: #000  !important; }
+#mp_bar .pages a, .pages.top a {
+	border-bottom: 0 !important;
+	color: #000 !important;
+	color: #000  !important; }
+.pages a:hover {
+	color: #000 !important;
+	background-color: transparent !important;
+	color: #000  !important; }
+.pages.bottom {
+    background: transparent !important;
+    padding-bottom: 6px !important;
+	color: #000  !important; }
+#mp_bar .pages .curpage, .pages.top .curpage, .pages.bottom .curpage {
+    margin: 0 8px 0 3px !important;
+	color: #000  !important;
+	color: #000  !important; }
+.breadcrumbs .online_users {
+	visibility: hidden !important;
+    position: absolute !important;
+    top: 28px !important;
+    right: 8px !important;
+    color: #ddd !important;
+	color: #000  !important;
+	color: #000  !important; }
+.breadcrumbs .online_users, .breadcrumbs .online_users a {
+    display: inline !important;
+    font-family: 'Helvetica', Sans-Serif !important;
+    font-size: 11px !important;
+    padding: 0 !important;
+	color: #000  !important; }
+#mods {
+    position: relative !important;
+	padding: 0 !important;
+    display: block !important;
+    top: -6px !important;
+    left: 25% !important;
+    width: 50% !important;
+    text-align: center !important;
+	color: #000  !important; }
+#mods, #mods a {
+    font-family: 'Helvetica', Sans-Serif !important;
+    font-size: 12px !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+	color: #000  !important; }
+#mods, #mods b {
+	color: #000  !important; 
+	padding: 0 !important;
+	margin: 0 !important;}
+
+
+thead {
+	background-color: #ccc !important;
+	color: #000  !important;
+	color: #000  !important; }
+
+/* Forum list styles */
+#forum {
+    margin: 8px 8px -6px !important;
+	color: #000  !important;
+	color: #000  !important; }
+#forum th, #forum td {
+    color: #000 !important;
+    border-color: #999!important;
+	-webkit-border-image:url('./winpos/bordertopbottom.png') 30 30 round !important; 
+	border-image:url('./winpos/bordertopbottom.png') 30 30 round !important;
+	border-height: 2px !important;
+	color: #000  !important;
+	color: #000  !important; }
+#forum th {
+	padding: 6px 5px 3px !important;
+	color: #000  !important;
+	color: #000  !important; }
+#forum th, #forum th a, #forum th a abbr {
+	font-family: 'Helvetica', sans-serif !important;
+	font-size: 11px !important;
+	color: #000  !important;
+	color: #000  !important; }
+/* Sorting options */
+th.lastpost {
+	color: #000  !important;
+	color: #000  !important; }
+th.lastpost a:first-child {
+	color: #000  !important;
+	top: 6px !important;
+	color: #000  !important; }
+th.lastpost a img[src="http://fi.somethingawful.com/images/sortasc.gif"] {
+    width: 0 !important;
+    height: 0 !important;
+    margin-top: 2px !important;
+    padding: 14px 16px 0 0 !important;
+    background-image: url('./winpos/sortasc.png') !important;
+	color: #000  !important; }
+th.lastpost a img[src="http://fi.somethingawful.com/images/sortdesc.gif"] {
+    width: 0 !important;
+    height: 0 !important;
+    margin-top: 2px !important;
+    padding: 14px 16px 0 0 !important;
+    background-image: url('./winpos/sortdesc.png') !important;
+	color: #000  !important; }
+/* Thread list links */
+.info a {
+	text-decoration: none !important;
+	color: #000  !important; }
+.author a, .replies a, .views, .lastpost, .lastpost div, .lastpost a {
+	font-family: 'Helvetica', sans-serif !important;
+	text-decoration: none !important;
+	color: #000  !important; }
+.lastpost a {
+	display: inline-block !important;
+	font-size: 12px !important;
+	margin-top: 3px !important;
+	color: #000  !important; }
+/* Thread page links */
+.title_pages {
+	margin: 3px 0 0 !important;
+    padding: 0 !important;
+	color: #000  !important; }
+.title_pages, .title_pages a {
+    font-family: 'Helvetica', Sans-Serif !important;
+    font-size: 10px !important;
+    color: #777 !important;
+    background: transparent !important;
+	color: #000  !important; }
+a.pagenumber {
+    background-color: transparent !important;
+
+	color: #000  !important; }
+/* Stickied threads */
+.title_sticky .info a.thread_title 
+{
+    background-image: url('./winpos/sticky.png') !important;
+	color: #000  !important; }
+/* Previously viewed threads */
+.thread.seen td {
+    background-image: url('./winpos/read.png') !important;
+	background-color: #b0b0b0 !important;
+	color: #000  !important; }
+/* Last-Seen button */
+.lastseen {
+    border: none !important;
+	border-top: 1px solid transparent !important;
+    background: transparent !important;
+	color: #000  !important; }
+.lastseen .count {
+
+	border-left-color: #000 !important;
+	color: #000  !important; }
+.lastseen a {
+
+    font-size: 12px !important;
+	text-decoration: bold !important;
+ 	border: none !important;
+	background-color: #b0b0b0 !important;
+		display: inline-block !important;
+
+		height: 24px !important;
+		background-image: url('./winpos/buttonbg.png') !important;
+		background-repeat:no-repeat !important;
+		background-position: 0px 0px !important;
+		text-align: center !important;
+		
+	color: #000  !important; }
+.lastseen .count {
+	padding-top: 5px !important;	
+	width: 100px !important;
+    text-align: center !important;
+	color: #000  !important; }
+.lastseen .count:after {
+    content: ' new' !important;
+	text-align: center !important;
+	text-decoration: bold !important;
+	color: #000  !important; }
+.lastseen .x {
+	border: none !important;
+	background: none !important;
+	font-family: 'Helvetica', Sans-Serif !important;
+	margin: 0px 3px 0px 3px !important;
+	padding: 0px 3px 0px 3px !important;
+	padding-top: 6px !important;
+	color: #000  !important; }
+.lastseen .x:hover {
+	margin: 0px 3px 0px 3px !important;
+	padding: 0px 3px 0px 3px !important;;
+	color: #000  !important; }
+.lastseen a:active {
+    color: #ddd !important;
+
+	color: #000  !important; }
+/* Ratings */
+td.rating img {
+    width: 0 !important; height: 0 !important;
+    padding: 20px 46px 0 0 !important;
+	color: #000  !important; }
+td.rating .r5 {
+    background-image: url('./winpos/rated5.png') !important;
+	color: #000  !important; }
+td.rating .r4 {
+    background-image: url('./winpos/rated4.png') !important;
+	color: #000  !important; }
+td.rating .r3 {
+    background-image: url('./winpos/rated3.png') !important;
+	color: #000  !important; }
+td.rating .r2 {
+    background-image: url('./winpos/rated2.png') !important;
+	color: #000  !important; }
+td.rating .r1 {
+    background-image: url('./winpos/rated1.png') !important;
+	color: #000  !important; }
+
+
+
+/* Bottom of forum view */
+.pages.bottom {
+    border: none !important;
+    border-top: 1px solid #000 !important;
+    margin: 0 !important;
+    padding: 8px 12px 8px !important;
+	color: #000  !important; }
+.forumbar {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+	color: #000  !important; }
+.forumbar .postbuttons {
+    margin: 28px 8px -28px 0 !important;
+	color: #000  !important; }
+.online_users.bottomonline {
+    display: block !important;
+    margin: -27px 0 6px 30% !important;
+    width: 40% !important;
+    text-align: center !important;   
+    color: #ccc !important;
+	color: #000  !important; }
+.online_users.bottomonline a {
+    font-family: 'Helvetica', Sans-Serif !important;
+    text-decoration: none !important;
+    color: #000 !important;
+	color: #000  !important; }
+.mainbodytextlarge {
+    display: none !important;
+	color: #000  !important; }
+.WindowTitle .mainbodytextlarge, .breadcrumbs .mainbodytextlarge {
+    display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	color: #000  !important; }
+/* Bottom breadcrumb bar */
+.bottomLinks {
+	/*
+	font-family: Geneva !important;
+	font-size: 11px !important;
+	font-weight: normal !important;
+	display: block !important;
+	top: 100% !important;
+	width: 400px !important;
+	height: 70px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: 40px !important;
+
+	text-align: center !important;
+	border-top: 1px solid #ffffff !important;
+	border-left: 1px solid #ffffff !important;
+	border-bottom: 1px solid #ffcc02 !important;
+	border-right: 1px solid #ffcc02 !important;
+	background-color: #fff999 !important;
+	color: #000  !important;*/
+	
+	font-family: Helvetica !important;
+	font-size: 11px !important;
+	padding: 5px 10px 0 !important;
+	background-color: #c0c0c0 !important;
+	color: #fff  !important; 
+	width: 400px !important;
+	height: 70px !important;
+	border-width: 2px !important;
+	-moz-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	-webkit-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	-o-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	border-image: url('./winpos/borderbg.png') 2 fill repeat !important;
+	 }
+.bottomLinks a, .bottomLinks .bclast {
+	font-style: Helvetica !important;
+	font-size: 11px !important;
+	font-weight: normal !important;
+	text-decoration: none !important;
+	border-bottom: none !important;
+	color: #000  !important; }
+a[href="#top"] {
+	display: none !important;
+	color: #000  !important; }
+
+/* stupid images */
+
+.omapalpet.right {
+	
+	font-family: Helvetica !important;
+	font-size: 11px !important;
+	padding: 5px 10px 0 !important;
+	background-color: #c0c0c0 !important;
+	color: #fff  !important; 
+ margin: 3px !important;
+padding: 3px !important;
+	border-width: 2px !important;
+	-moz-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	-webkit-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	-o-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	border-image: url('./winpos/borderbg.png') 2 fill repeat !important;
+	 }
+.omapalpet.left {
+	
+	font-family: Helvetica !important;
+	font-size: 11px !important;
+	padding: 5px 10px 0 !important;
+	background-color: #c0c0c0 !important;
+	color: #fff  !important; 
+ 	 margin: 3px !important;
+	padding: 3px !important;
+	border-width: 2px !important;
+	-moz-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	-webkit-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	-o-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	border-image: url('./winpos/borderbg.png') 2 fill repeat !important; }
+
+
+
+/* Thread buttons */
+.threadbar.top {
+    border: none !important;
+    position: absolute !important;
+    top: 24px !important; 
+    right: 6px !important;
+    padding: 0 !important;
+    background: transparent !important;
+	color: #000  !important; }
+.threadbar .postbuttons a img,
+.forumbar img[alt="Post New Thread"] {
+    width: 0 !important;
+    height: 0 !important;
+    padding: 24px 100px 0 0 !important;
+    background-repeat: no-repeat !important;
+	color: #000  !important; }
+.threadbar .postbuttons li:nth-of-type(1) img {
+    content: 'Mark' !important;
+	color: #000  !important; }
+/* Post */
+.threadbar .postbuttons li a img[alt="Post"],
+.forumbar img[alt="Post New Thread"] {
+    background-image: url('./winpos/post.png') !important;
+	color: #000  !important;
+	    padding: 24px 100px 0 0 !important; }
+.threadbar .postbuttons li a:active img[alt="Post"],
+.forumbar a:active img[alt="Post New Thread"] {
+  /*  background-image: url('./winpos/post_on.png') !important; */
+    padding: 24px 100px 0 0 !important;
+	color: #000  !important; 
+	}
+/* Reply */
+.threadbar .postbuttons li a img[alt="Reply"] {
+    background-image: url('./winpos/reply.png') !important;
+    padding: 24px 100px 0 0 !important;
+	color: #000  !important; }
+.threadbar .postbuttons li a:active img[alt="Reply"] {
+ /*    background-image: url('./winpos/reply_on.png') !important;*/
+    padding: 24px 100px 0 0 !important;
+	color: #000  !important; }
+
+
+
+/* Threads */
+#thread {
+    padding: 8px !important;
+	color: #000  !important; }
+.post td {
+    border: 1px solid #aaa !important;
+	color: #000  !important; }
+.userinfo dt, .userinfo dd {
+    color: #000 !important;
+	color: #000  !important; }
+.userinfo .author, .userinfo .registered, .userinfo .title, .userinfo .title * {
+	font-family: 'Helvetica', sans-serif !important;
+	color: #000  !important; }
+.userinfo dt.role-mod, .userinfo dt.role-admin {
+    padding: 2px 0 3px 20px !important;
+    background-image: url('./winpos/modstar.png') !important;
+	color: #000  !important; }
+.seen1 .postbody, .seen2 .postbody {
+    background-image: url('./winpos/read.png') !important;
+	color: #000  !important; }
+
+div.standard {
+	border: 1px solid #000 !important;
+	background-image: url('./winpos/window_title.png') !important; 
+	background-repeat: no-repeat !important;
+	display: block !important;
+	z-index: 100 !important;
+	
+    margin: -2px -2px -2px -2px !important;
+	color: #fff  !important; }
+div.standard h2 {
+	 background-image: url('./winpos/window_right.png') !important;
+	    background-repeat: no-repeat !important;
+	    background-position: right 2px !important;
+	height: 17px !important;
+	display: block !important;
+    border-bottom: 1px solid #000 !important;
+	border-top: none !important;
+
+    text-align: left !important;
+    
+    margin: -2px -2px -2px -2px !important;
+    position: relative !important;
+	color: #fff  !important; }
+.cosby {
+	background-image: url('./winpos/window_title.png') !important; 
+	background-position: -2px 0px !important;
+	background-repeat: no-repeat !important;
+	display: block !important;
+	z-index: 100 !important;
+	background-color: #c0c0c0 !important;
+	color: #fff  !important; 
+
+	border-width: 2px !important;
+	-moz-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	-webkit-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	-o-border-image: url('./winpos/borderbg.png') 2 repeat !important;
+	border-image: url('./winpos/borderbg.png') 2 fill repeat !important;
+	
+}
+.cosby b { 
+	background-image: url('./winpos/window_title.png') !important; 
+	background-repeat: no-repeat !important;
+	display: block !important;
+	z-index: 100 !important;
+	text-align: left !important;
+	padding: 5px 0px 0px 28px !important;
+    margin: -2px -2px -2px -2px !important;
+	color: #fff  !important;
+}
+.bbc-block {
+	background-image: url('./winpos/window_title.png') !important; 
+	background-position: -2px -2px;
+	background-repeat: no-repeat !important;
+	display: block !important;
+	z-index: 100 !important;
+	background-color: #c0c0c0;
+	color: #fff  !important; 
+	border-width: 2px;
+	-moz-border-image: url('./winpos/borderbg.png') 2 repeat;
+	-webkit-border-image: url('./winpos/borderbg.png') 2 repeat;
+	-o-border-image: url('./winpos/borderbg.png') 2 repeat;
+	border-image: url('./winpos/borderbg.png') 2 fill repeat;
+	
+	}
+
+.bbc-block h4, .bbc-block h5 {
+	 background-image: url('./winpos/window_right.png') !important;
+	    background-repeat: no-repeat !important;
+	    background-position: right top -2px -2px !important;
+	height: 22px !important;
+	display: block !important;
+	border-top: none !important;
+   
+    text-align: left !important;
+	color: #fff !important;
+    position: relative !important;
+	
+	 }
+ 
+.no-highlight {
+	color: #000 !important;
+ }
+.postbody code {
+	color: #000 !important;
+  }
+
+h4 {
+	 background-image: url('./winpos/window_right.png') !important;
+	    background-repeat: no-repeat !important;
+	    background-position: right 0px !important;
+	height: 24px !important;
+	display: block !important;
+  	border-top: none !important;
+   
+    text-align: left !important;
+    
+    margin: -2px -2px -2px -2px !important;
+   
+	color: #fff  !important; }
+h4 b {
+	background-color: #ccc !important;
+	height: 24px !important;
+	display: block !important;
+
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+
+	color: #000  !important; }
+h4 .quote_link {
+		background-image: url:('./winpos/read.png') !important;
+ 
+		margin-right: auto !important;
+		font-size: 11px !important;
+		height: 24px !important;
+ 
+		padding-right: 6px !important;
+		
+	color: #fff  !important; }
+.bbc-block blockquote {
+	padding: 8px !important;
+	color: #000  !important; }
+/*
+.bbc-block {
+	border: 1px solid #000 !important;
+	background-image: url('./winpos/window_title.png') !important; 
+	background-repeat: no-repeat !important;
+	display: block !important;
+	z-index: 100 !important;
+	 box-shadow: 1px 1px 1px #000 !important;  
+	color: #000  !important; }
+
+/* Posts */
+.post {
+	border: 1px solid #000 !important;
+ 
+    margin-bottom: 8px !important;
+	color: #000  !important;
+	color: #000  !important; }
+.postbody, .postbody * {
+    font-family: 'Helvetica', 'Charcoal CY', 'Courier', Monospace !important;
+		color: #000  !important;
+	color: #000  !important; }
+.postbody h4, .postbody h5 {
+    font-family: 'Helvetica', 'Monaco', 'Charcoal CY', Monospace !important;
+	height: 24px !important;
+	padding: 6px 28px !important;
+	color: #fff  !important; }
+
+/* Edited posts */
+.editedby span {
+    padding: 6px 0 2px 20px !important;
+    background-image: url('./winpos/edited.png') !important;
+    font-style: normal !important;
+    font-family: 'Helvetica', sans-serif !important;
+	color: #000  !important; }
+
+/* Post buttons */
+.post .postbuttons {
+    padding: 5px 4px 0 !important;
+	color: #000  !important; }
+.post .postbuttons img {
+    width: 0 !important;
+    height: 0 !important;
+    padding: 22px 73px 0 0 !important;
+    background-repeat: no-repeat !important;
+	color: #000  !important; }
+.post .postbuttons .alertbutton img {
+
+    background-image: url('./winpos/report.png') !important;
+    padding: 24px 100px 0 0 !important;
+	color: #000  !important; }
+.post .postbuttons .alertbutton a:active img {
+/*     background-image: url('./winpos/report_on.png') !important;*/
+	color: #000  !important; }
+.post .postbuttons img[alt="Edit"] {
+    background-image: url('./winpos/edit.png') !important;
+    padding: 24px 100px 0 0 !important;
+	color: #000  !important; }
+.post .postbuttons a:active img[alt="Edit"] {
+/*    background-image: url('./winpos/edit_on.png') !important;*/
+    padding: 24px 100px 0 0 !important;
+	color: #000  !important; }
+.post .postbuttons img[alt="Quote"] {
+    
+    background-image: url('./winpos/quote.png') !important;
+    padding: 24px 100px 0 0 !important;
+	color: #000  !important; }
+.post .postbuttons a:active img[alt="Quote"] {
+/*    background-image: url('./winpos/quote_on.png') !important;*/
+    padding: 24px 100px 0 0 !important;
+	color: #000  !important; }
+
+/* Profile links */
+.profilelinks {
+    padding: 4px 0 0 4px !important;
+
+	color: #000  !important; }
+#thread ul.profilelinks li {
+	display: inline-block !important;
+	width: 100px !important;
+	height: 24px !important;
+	background-image: url('./winpos/buttonbg.png') !important;
+	background-repeat:no-repeat !important;
+	background-position: 0px 0px !important;
+	text-align: center !important;
+	padding-top: 5px !important;
+	color: #000  !important;
+	color: #000  !important; }
+
+
+
+ul.postbuttons li button {
+	display: inline-block !important;
+	width: 100px !important;
+	height: 24px !important;
+	background-image: url('./winpos/buttonbg.png')  !important;
+	background-repeat:no-repeat !important;
+	background-position: 0px 0px !important;
+	text-align: center !important;
+	padding-top: 3px !important;
+	border: none  !important;
+	color: #000  !important;
+	color: #000  !important; }
+.profilelinks a {
+    font-size: 12px !important;
+    text-decoration: none !important;
+	color: #000  !important;
+	color: #000  !important; }
+
+.profilelinks a:active {
+    background-color: #000 !important;
+    color: #ccc !important;
+	color: #000  !important; }
+
+/* Stuff underneath avatars */
+.postdate {
+    padding: 4px 0 0 !important;
+	color: #000  !important; }
+.postdate a:nth-of-type(1) img {
+    width: 0 !important;
+    height: 0 !important;
+    margin: 1px 0 -2px 10px !important;
+    padding: 17px 18px 0 0 !important;
+    background-image: url('./winpos/posticon-seen.png') !important;
+    background-repeat: no-repeat !important;
+	color: #000  !important;
+	color: #000  !important; }
+
+
+
+/* Bottom of thread view */
+.threadbar.bottom {
+    border: none !important;
+    margin: 0 8px 0 0 !important;
+    padding: 0 !important;
+	color: #000  !important; }
+.threadrate {
+    margin: 0 0 0 30% !important;
+    width: 40% !important;
+    text-align: center !important;
+    color: #000 !important;
+	color: #000  !important; }
+.threadrate b {
+    display: none !important;
+	color: #000  !important; }
+.pages.bottom {
+    border-bottom: none !important;
+	border-top: none !important;
+    margin: -20px 0 4px !important;
+	color: #000  !important; }
+.pages.bottom.thread {
+    margin: -40px 0 0 !important;
+	color: #000  !important; }
+form[action="forumdisplay.php"] {
+    display: none !important;
+	color: #000  !important; }
+
+
+
+/* Thread rating buttons */
+#rateform_js_attach {
+    position: absolute !important;
+    bottom: 6px !important;
+    left: 100px !important;
+    width: 163px !important;
+    margin-left: -80px !important;
+}\
+    /*
+    background-image: url('./winpos/ratings.png') !important;
+	color: #000  !important; }
+#rateform_js_attach img {
+    height: 0px !important;
+    width: 21px !important;
+    overflow: hidden !important;
+    padding-bottom: 21px !important;
+	color: #000  !important; }
+#rateform_js_attach img:last-child {
+    width: 58px !important;
+	color: #000  !important; }
+
+
+.threadrate img.r1, .threadrate img.r2, .threadrate img.r3, .threadrate img.r4, .threadrate img.r5 {
+    width: 0 !important; height: 0 !important;
+    padding: 21px 21px 0 0 !important;
+	color: #000  !important; }
+.threadrate img.r1 {
+    background-image: url('./winpos/rate-1.png') !important;
+	color: #000  !important; }
+.threadrate img.r2 {
+    background-image: url('./winpos/rate-2.png') !important;
+	color: #000  !important; }
+.threadrate img.r3 {
+    background-image: url('./winpos/rate-3.png') !important;
+	color: #000  !important; }
+.threadrate img.r4 {
+    background-image: url('./winpos/rate-4.png') !important;
+	color: #000  !important; }
+.threadrate img.r5 {
+    background-image: url('./winpos/rate-5.png') !important;
+	color: #000  !important; }
+.threadrate img.digg {
+    width: 0 !important; height: 0 !important;
+    padding: 21px 58px 0 0 !important;
+    background-image: url('./winpos/rate-digg.png') !important;
+	color: #000  !important; }
+*/
+
+
+
+/* Move that subscribe link way up top */
+.subscribe {
+    position: absolute !important;
+    top: 28px !important;
+    left: 40% !important;
+    width: 20% !important;
+    margin: 0 !important;
+	color: #000  !important; }
+.subscribe a {
+    font-family: 'Helvetica', Sans-Serif !important;
+    font-size: 11px !important;
+	border-bottom: none !important;
+	color: #000  !important; }
+
+
+
+/* Copyright info */
+#copyright {
+    background-image: url('./winpos/about.png') !important;
+    background-repeat: no-repeat !important;
+    text-align: left !important;
+    color: #ccc !important;
+    font-size: 9px !important;
+    margin-left: auto !important;
+	margin-right: auto !important;
+    width: 410px !important;
+    height: 448px !important;
+    overflow: hidden !important;
+    padding-top: 281px !important;
+   	font-size: 0px !important;
+	color: #000  !important; }
+#copyright, #copyright * {
+	font-family: 'Helvetica', sans-serif !important;
+	-webkit-font-smoothing: none !important;
+	color: #000  !important; }
+#copyright a {
+    color: #ccc !important;
+    text-decoration: none !important;
+	color: #000  !important; }
+
+#main_full tr {
+
+}
+#main_full th {
+
+}
+
+table.standard #main_full {
+	background-image: url('./winpos/window_title.png') !important; 
+	background-position: -2px -2px;
+	background-repeat: no-repeat !important;
+	display: block !important;
+	z-index: 100 !important;
+	background-color: #c0c0c0;
+	color: #fff  !important; 
+
+	
+}
+/* Reply form */
+.standard {
+	background-image: url('./winpos/window_title.png') !important; 
+	background-position: -2px -2px;
+	background-repeat: no-repeat !important;
+	display: block !important;
+	z-index: 100 !important;
+	background-color: #c0c0c0;
+	color: #fff  !important; 
+
+	
+}
+.inner .postbody {
+	background-image: url('./winpos/window_title.png') !important; 
+	background-position: -2px -2px;
+	background-repeat: no-repeat !important;
+	display: block !important;
+	z-index: 100 !important;
+	background-color: #c0c0c0;
+	color: #fff  !important; 
+
+}
+ 
+table.standard, div.standard, div.standard h2 {
+
+    margin: 12px 24px 0 !important;
+ 	border: none !important;
+	width: 80% !important;
+	color: #fff  !important; 
+	}
+table.standard th, table.standard td {
+
+    background: transparent !important;
+	color: #000  !important;
+	padding: 4px 8px !important; }
+table.standard th {
+    color: #000 !important;
+
+    background-image: url('./winpos/window_title.png') !important;
+	background-repeat: no-repeat !important;
+    background-position: 0 0px !important;
+    text-align: left !important;
+    font-size: 12px !important;
+    padding: 4px 10px 2px 0px !important;
+	color: #fff  !important; 
+	height: 18px;
+	}
+table.standard th b {
+	text-decoration: none;
+	font-style: normal;
+    text-align: left !important;
+    padding: 5px 28px !important;
+	color: #fff  !important; }
+table.standard th b:after {
+	    padding: 4px 4px !important;
+    content: 'Nerd' !important;
+	color: #fff  !important; }
+table.standard .smalltext, table.standard .smalltext * {
+    vertical-align: bottom !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+	color: #000  !important; }
+div.standard {
+    background-color: #c0c0c0 !important;
+	color: #000  !important; 
+ 
+
+	}
+div.standard h2 {
+    background: transparent !important;
+
+	padding: 6px 4px !important;
+	color: #fff  !important; 
+	}
+/* Jesus christ these selectors are terrible */
+form[action="newreply.php"] div[style="text-align:center !important;"]:first-of-type,
+form[action="newthread.php"] div[style="text-align:center !important;"]:first-of-type,
+form[action="editpost.php"] div[style="text-align:center !important;"]:first-of-type {
+
+	color: #000  !important; }
+
+form[action="newreply.php"] div[style="text-align:center !important;"]:first-of-type input[type="submit"],
+form[action="newthread.php"] div[style="text-align:center !important;"]:first-of-type input[type="submit"],
+form[action="editpost.php"] div[style="text-align:center !important;"]:first-of-type input[type="submit"] {
+
+    font-size: 12px !important;
+    margin: 8px 8px !important;
+ 	border: none !important;
+	background-color: #c0c0c0 !important;
+		display: inline-block !important;
+		width: 100px !important;
+		height: 24px !important;
+		background-image: url('./winpos/buttonbg.png') !important;
+		background-repeat:no-repeat !important;
+		background-position: 0px 0px !important;
+		text-align: center !important;
+		padding-top: 3px !important;
+
+	color: #000  !important; }
+form[action="newreply.php"] div[style="text-align:center !important;"]:first-of-type input[type="submit"]:active,
+form[action="newthread.php"] div[style="text-align:center !important;"]:first-of-type input[type="submit"]:active,
+form[action="editpost.php"] div[style="text-align:center !important;"]:first-of-type input[type="submit"]:active {
+
+    color: #ccc !important;
+	color: #000  !important; }
+
+
+
+/* Checkboxes and radio buttons */
+input[type="checkbox"], input[type="radio"] {
+    -webkit-appearance: none !important;
+    background-image: url('./winpos/checkers.png') !important;
+    width: 13px !important;
+    height: 13px !important;
+    vertical-align: middle !important;
+    background-position-y: -40px !important;
+	color: #000  !important; }
+input[type="checkbox"]
+{
+    background-position-x: left !important;
+	color: #000  !important; }
+input[type="radio"]
+{
+    background-position-x: right !important;
+	color: #000  !important; }
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled
+{
+    background-position-y: top !important;
+	color: #000  !important; }
+input[type="checkbox"]:checked,
+input[type="radio"]:checked
+{
+    background-position-y: -60px !important;
+	color: #000  !important; }
+input[type="checkbox"]:disabled:checked,
+input[type="radio"]:disabled:checked
+{
+    background-position-y: -20px !important;
+	color: #000  !important; }
